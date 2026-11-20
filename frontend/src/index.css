@@ -1,0 +1,82 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  background: #0f1115;
+  color: #e6e8eb;
+}
+a { color: #6ea8fe; }
+button {
+  font: inherit;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+}
+button:hover { background: #1d4ed8; }
+button.secondary {
+  background: transparent;
+  border: 1px solid #3a3f4b;
+  color: #e6e8eb;
+}
+button.secondary:hover { background: #1a1d24; }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+input {
+  font: inherit;
+  background: #1a1d24;
+  border: 1px solid #3a3f4b;
+  border-radius: 6px;
+  padding: 8px 10px;
+  color: #e6e8eb;
+}
+.container { max-width: 960px; margin: 0 auto; padding: 24px; }
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  border-bottom: 1px solid #22262f;
+}
+.card {
+  background: #171a21;
+  border: 1px solid #22262f;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+.row { display: flex; gap: 10px; align-items: center; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid #22262f; }
+th { color: #9aa1ad; font-weight: 500; }
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid #3a3f4b;
+}
+.dot { width: 8px; height: 8px; border-radius: 50%; }
+.dot.connected { background: #22c55e; }
+.dot.connecting, .dot.reconnecting { background: #eab308; }
+.dot.disconnected { background: #ef4444; }
+.muted { color: #9aa1ad; font-size: 13px; }
+.error { color: #f87171; font-size: 13px; }
+.runlist-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #22262f;
+  text-decoration: none;
+  color: inherit;
+}
+.runlist-item:hover { color: #6ea8fe; }
+code.key {
+  background: #0f1115;
+  padding: 2px 6px;
+  border-radius: 4px;
+  word-break: break-all;
+}

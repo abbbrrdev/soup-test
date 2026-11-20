@@ -1,0 +1,14 @@
+.env
+node_modules/
+dist/
+frontend/dist/
+backend/server
+backend/soup-tracker-backend
+tests/load/loadtest
+*.log
+.DS_Store
+tests/e2e/node_modules/
+tests/e2e/test-results/
+tests/e2e/playwright-report/
+tests/load/node_modules/
+tests/isolation/node_modules/
